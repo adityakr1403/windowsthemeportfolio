@@ -3,7 +3,13 @@
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 
-const WindowSimple = ({ children, title }) => {
+const WindowSimple = ({
+  children,
+  title,
+}: {
+  children: React.ReactNode;
+  title: String;
+}) => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.fromTo(
