@@ -1,3 +1,4 @@
+"use client";
 import WindowSimple from "@/components/windows/window-simple";
 import Link from "next/link";
 import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
@@ -13,9 +14,17 @@ export default function Home() {
           <div className="avatar w-[200px] h-[200px] rounded-full backdrop-blur-3xl bg-blue-800"></div>
           <div className="details text-gray-100">
             <h1 className="text-3xl">Aditya Kumar</h1>
-            <Link href={"mailto:adityakr1403@gmail.com"}>
-              <code className="text-lg text-gray-300">adityakr1403@gmail.com</code>
-            </Link>
+            <a
+              href={""}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "mailto:adityakr1403@gmail.com";
+              }}
+            >
+              <code className="text-lg text-gray-300">
+                adityakr1403@gmail.com
+              </code>
+            </a>
             <div className=" grid grid-cols-2 gap-2 p-2 mt-3">
               <Link
                 className="rounded-lg w-20 h-20 p-2 flex justify-center items-center hover:bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl"
