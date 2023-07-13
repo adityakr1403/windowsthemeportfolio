@@ -13,7 +13,7 @@ export default function Home() {
           <div className="avatar w-[200px] h-[200px] rounded-full backdrop-blur-3xl bg-blue-800"></div>
           <div className="details text-gray-100">
             <h1 className="text-3xl">Aditya Kumar</h1>
-            <Link href={"adityakr1403@gmail.com"} type="email">
+            <Link href={"mailto:adityakr1403@gmail.com"}>
               <code className="text-lg text-gray-300">adityakr1403@gmail.com</code>
             </Link>
             <div className=" grid grid-cols-2 gap-2 p-2 mt-3">
