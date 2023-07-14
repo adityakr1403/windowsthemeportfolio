@@ -5,13 +5,19 @@ import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 import { LiaHackerrank } from "react-icons/lia";
+import dev from "@/assets/dev.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <section className="w-full min-h-screen flex flex-col justify-center items-center">
       <WindowSimple title={"Home"}>
         <div className="h-full w-full flex flex-col md:flex-row gap-5 justify-center items-center">
-          <div className="avatar w-[200px] h-[200px] rounded-full backdrop-blur-3xl bg-blue-800"></div>
+          <Image
+            src={dev}
+            alt="Aditya Kumar"
+            className="avatar w-[200px] h-[200px] rounded-full "
+          ></Image>
           <div className="details text-gray-100">
             <h1 className="text-3xl">Aditya Kumar</h1>
             <a
