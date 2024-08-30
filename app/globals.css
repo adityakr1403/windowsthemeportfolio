@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: url("../assets/pexels-pixabay-50594.jpg");
+  background: url("../assets/pexels-pixabay-50594.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
